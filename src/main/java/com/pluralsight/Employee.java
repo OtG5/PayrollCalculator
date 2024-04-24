@@ -14,8 +14,8 @@ public class Employee {
         this.payRate = payRate;
 
     }
-    public double getGrossPay(double payRate, double hoursWorked) {
-        return hoursWorked * payRate;
+    public double getGrossPay() {
+        return this.hoursWorked * this.payRate;
     }
 
 
@@ -29,27 +29,21 @@ public class Employee {
         this.employeeId = employeeId;
     }
 
-    public String getPayRate() {
+    public double getPayRate() {
         return payRate;
     }
 
-    public void setPayRate(String payRate) {
+    public void setPayRate(double payRate) {
         this.payRate = payRate;
     }
 
-    public String getHoursWorked() {
+    public double getHoursWorked() {
         return hoursWorked;
     }
 
-    public void setHoursWorked(String hoursWorked) {
+    public void setHoursWorked(double hoursWorked) {
         this.hoursWorked = hoursWorked;
     }
 
-    public double getGrossPay() {
-        return grossPay;
-    }
 
-    public void setGrossPay(double payRate) {
-        this.payRate = grosspay;
-    }
 }
